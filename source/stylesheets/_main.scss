@@ -2,4 +2,135 @@ body {
   font-family: -apple-system, BlinkMacSystemFont, "Microsoft JhengHei", "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
   text-align: justify;
   text-justify: auto;
+  background-color: $gray-900;
+}
+
+.wrapper {
+  max-width: 1024px;
+}
+
+.addData-style {
+}
+
+.addData input {
+    height: 40px;
+    background-color: rgba(255, 255, 255, 0.18);
+    border: 2px solid $primary;
+    border-radius: 10px;
+    font-size: 1.5rem;
+    line-height: 1.5rem;
+    color: rgba(255, 255, 255, 0.50);
+    margin-bottom: 23px;
+    padding-left: 16px;
+    font-family: 'Noto Sans TC', sans-serif;
+    &:focus {
+      outline: none;
+    }
+}
+
+.result {
+  width: 120px;
+  height: 120px;
+  line-height: 120px;
+  position: relative;
+  &:after {
+    content: '';
+    color: $white;
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 140px;
+  }
+}
+
+ul {
+  list-style: none;
+}
+
+li {
+    height: 62px;
+    line-height: 62px;
+    position: relative;
+    > p {
+      font-size: 1rem;
+    }
+}
+.txt-result {
+  font-size: 1.25rem;
+}
+
+.txt-result-i ,.txt-result-l ,.txt-result-o {
+    margin-right: 40px;
+}
+.txt-result:before {
+    content: '';
+    display: inline-block;
+    float: left;
+    width: 7px;
+    height: 62px;
+    margin-right: 19px;
+}
+
+.txt-result-i:before {
+    background: $ideal;
+    box-shadow: 2px 0 3px 0 rgba(133,215,63,0.29);
+}
+
+.txt-result-l:before {
+    background-color: $toolight;
+    box-shadow: 2px 0 3px 0 rgba(49,186,249,0.29);
+}
+
+.txt-result-o:before {
+    background-color: $over;
+    box-shadow: 2px 0 3px 0 rgba(255,152,45,0.29);
+}
+
+.txt-result-m:before {
+    background-color: $medium;
+    box-shadow: 2px 0 3px 0 rgba(255,108,2,0.29);
+}
+
+.txt-result-h:before {
+    background-color: $heavy;
+    box-shadow: 2px 0 3px 0 rgba(255,17,0,0.29);
+}
+
+/*文字*/
+.txt-bmi:before {
+    content: 'BMI';
+    display: inline-block;
+    font-size: 0.75rem;
+    font-weight: normal;
+    margin: 0 7px 0 30px;
+    line-height: 62px;
+}
+
+.txt-kg {
+    width: 145px;
+}
+
+.txt-kg:before {
+    content: 'weight';
+    display: inline-block;
+    font-size: 0.75rem;
+    font-weight: normal;
+    margin: 0 7px 0 40px;
+    line-height: 62px;
+}
+
+.txt-cm:before {
+    content: 'height';
+    display: inline-block;
+    font-size: 0.75rem;
+    font-weight: normal;
+    margin: 0 7px 0 20px;
+    line-height: 62px;
+}
+
+.txt-date {
+    display: inline-block;
+    margin-left: 52px;
+    font-size: 0.75rem;
+    line-height: 62px;
 }
