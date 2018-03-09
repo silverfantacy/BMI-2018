@@ -17,15 +17,19 @@
       </div>
       <div class="addData d-flex flex-column col-4">
         <label for="height" class="h6 text-primary mb-0 font-weight-bold addData-style mb-1">身高 cm</label>
-        <input type="text" name="" id="height" required onkeyup="if(/\D/.test(this.value)){alert('請輸入數字');this.value='';}" value="170">
+        <input type="text" name="" id="height" placeholder="請輸入身高" required onkeyup="if(/\D/.test(this.value)){alert('請輸入數字');this.value='';}"
+          value="">
         <label for="weight" class="h6 text-primary mb-0 font-weight-bold addData-style mb-1">體重 kg</label>
-        <input type="text" name="" id="weight" required onkeyup="if(/\D/.test(this.value)){alert('請輸入數字');this.value='';}" value="50">
+        <input type="text" name="" id="weight" placeholder="請輸入體重" required onkeyup="if(/\D/.test(this.value)){alert('請輸入數字');this.value='';}"
+          value="">
       </div>
       <div class="col-2 d-flex flex-row justify-content-center align-items-center resultJs">
         <p class="result rounded-circle bg-primary h4 text-center text-secondary font-weight-bold mb-0">看結果</p>
 
       </div>
-      <p class="h3 result-text-js"><span class="text-ideal result-text"></span></p>
+      <p class="h3 result-text-js">
+        <span class="text-ideal result-text"></span>
+      </p>
     </header>
 
     <main class="row p-5" style="background-color: #f6f6f6;">
@@ -46,7 +50,7 @@
           <p class="txt-date mb-0">06-19-2017</p>
         </li> -->
       </ul>
-      <pre class="test"></pre>
+      <!-- <pre class="test"></pre> -->
 
 
     </main>
