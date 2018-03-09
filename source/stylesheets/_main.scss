@@ -9,9 +9,10 @@ body {
   max-width: 1024px;
 }
 
-.addData-style {
-}
 
+// headerr
+
+// input
 .addData input {
     height: 40px;
     background-color: rgba(255, 255, 255, 0.18);
@@ -28,11 +29,15 @@ body {
     }
 }
 
+// btn
 .result {
   width: 120px;
   height: 120px;
   line-height: 120px;
   position: relative;
+  transform: translate(5px,5px);
+  transition: 0.3s;
+  cursor: pointer;
   &:after {
     content: '';
     color: $white;
@@ -41,8 +46,256 @@ body {
     top: 0;
     left: 140px;
   }
+  &:hover {
+    box-shadow: 0 1px 6px 3px rgba(255, 195, 49, 0.64);
+    > .loop {
+    animation: loading 1s 1 linear;
+    }
+  }
+  &:active {
+    background-color: #DEA921;
+  }
 }
 
+@-webkit-keyframes loading {
+	from {
+		-webkit-transform: rotate(360deg);
+	}
+	to {
+		-webkit-transform: rotate(0deg);
+	}
+}
+@-moz-keyframes loading {
+	from {
+		-moz-transform: rotate(360deg);
+	}
+	to {
+		-moz-transform: rotate(0deg);
+	}
+}
+@-o-keyframes loading {
+	from {
+		-o-transform: rotate(360deg);
+	}
+	to {
+		-o-transform: rotate(0deg);
+	}
+}
+@keyframes loading {
+	from {
+		transform: rotate(360deg);
+	}
+	to {
+		transform: rotate(0deg);
+	}
+}
+
+//  各式狀態按鈕
+.ideal {
+    border: 6px solid $ideal;
+    padding-top: 36px;
+    font-size: 32px;
+    color: $ideal;
+    text-align: center;
+    line-height: 20px;
+    position: relative;
+    transition: 0.3s;
+    cursor: pointer;
+    &:hover {
+        box-shadow: 0 1px 6px 3px rgba(134, 215, 62, 0.64);
+    }
+    &:active {
+        background-color: $ideal;
+    }
+    p {
+        display: block;
+        margin: auto 0;
+        padding-top: 20px;
+    }
+    span {
+        font-size: 14px;
+    }
+    .loop {
+        width: 30px;
+        height: 30px;
+        display: block;
+        background-image: url(../images/icons_loop.png);
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-color: $ideal;
+        border: 3px solid #424242;
+        border-radius: 30px;
+        position: absolute;
+        top: 80px;
+        left: 80px;
+    }
+}
+
+.toolight {
+    border: 6px solid $toolight;
+    padding-top: 36px;
+    font-size: 32px;
+    color: $toolight;
+    text-align: center;
+    line-height: 20px;
+    position: relative;
+    transition: 0.3s;
+    cursor: pointer;
+    &:hover {
+        box-shadow: 0 1px 6px 3px rgba(134, 215, 62, 0.64);
+    }
+    &:active {
+        background-color: $toolight;
+    }
+    p {
+        display: block;
+        margin: auto 0;
+        padding-top: 20px;
+    }
+    span {
+        font-size: 14px;
+    }
+    .loop {
+        width: 30px;
+        height: 30px;
+        display: block;
+        background-image: url(../images/icons_loop.png);
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-color: $toolight;
+        border: 3px solid #424242;
+        border-radius: 30px;
+        position: absolute;
+        top: 80px;
+        left: 80px;
+    }
+}
+.over {
+    border: 6px solid $over;
+    padding-top: 36px;
+    font-size: 32px;
+    color: $over;
+    text-align: center;
+    line-height: 20px;
+    position: relative;
+    transition: 0.3s;
+    cursor: pointer;
+    &:hover {
+        box-shadow: 0 1px 6px 3px rgba(134, 215, 62, 0.64);
+    }
+    &:active {
+        background-color: $over;
+    }
+    p {
+        display: block;
+        margin: auto 0;
+        padding-top: 20px;
+    }
+    span {
+        font-size: 14px;
+    }
+    .loop {
+        width: 30px;
+        height: 30px;
+        display: block;
+        background-image: url(../images/icons_loop.png);
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-color: $over;
+        border: 3px solid #424242;
+        border-radius: 30px;
+        position: absolute;
+        top: 80px;
+        left: 80px;
+    }
+}
+.medium {
+    border: 6px solid $medium;
+    padding-top: 36px;
+    font-size: 32px;
+    color: $medium;
+    text-align: center;
+    line-height: 20px;
+    position: relative;
+    transition: 0.3s;
+    cursor: pointer;
+    &:hover {
+        box-shadow: 0 1px 6px 3px rgba(134, 215, 62, 0.64);
+    }
+    &:active {
+        background-color: $medium;
+    }
+    p {
+        display: block;
+        margin: auto 0;
+        padding-top: 20px;
+    }
+    span {
+        font-size: 14px;
+    }
+    .loop {
+        width: 30px;
+        height: 30px;
+        display: block;
+        background-image: url(../images/icons_loop.png);
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-color: $medium;
+        border: 3px solid #424242;
+        border-radius: 30px;
+        position: absolute;
+        top: 80px;
+        left: 80px;
+    }
+}
+.heavy {
+    border: 6px solid $heavy;
+    padding-top: 36px;
+    font-size: 32px;
+    color: $heavy;
+    text-align: center;
+    line-height: 20px;
+    position: relative;
+    transition: 0.3s;
+    cursor: pointer;
+    &:hover {
+        box-shadow: 0 1px 6px 3px rgba(134, 215, 62, 0.64);
+    }
+    &:active {
+        background-color: $heavy;
+    }
+    p {
+        display: block;
+        margin: auto 0;
+        padding-top: 20px;
+    }
+    span {
+        font-size: 14px;
+    }
+    .loop {
+        width: 30px;
+        height: 30px;
+        display: block;
+        background-image: url(../images/icons_loop.png);
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-color: $heavy;
+        border: 3px solid #424242;
+        border-radius: 30px;
+        position: absolute;
+        top: 80px;
+        left: 80px;
+    }
+}
+
+.result-text {
+    position: absolute;
+    // right: 7rem;
+}
+
+
+
+// mian 
 ul {
   list-style: none;
 }
