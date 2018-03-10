@@ -6,7 +6,7 @@ body {
 }
 
 .wrapper {
-  width: 1024px;
+  min-width: 1024px;
 }
 
 
@@ -101,7 +101,7 @@ body {
     transition: 0.3s;
     cursor: pointer;
     &:hover {
-        box-shadow: 0 1px 6px 3px rgba(134, 215, 62, 0.64);
+        box-shadow: 0 1px 6px 3px rgba( $ideal, .64 );
     }
     &:active {
         background-color: $ideal;
@@ -141,7 +141,7 @@ body {
     transition: 0.3s;
     cursor: pointer;
     &:hover {
-        box-shadow: 0 1px 6px 3px rgba(134, 215, 62, 0.64);
+        box-shadow: 0 1px 6px 3px rgba( $toolight, .64 );
     }
     &:active {
         background-color: $toolight;
@@ -180,7 +180,7 @@ body {
     transition: 0.3s;
     cursor: pointer;
     &:hover {
-        box-shadow: 0 1px 6px 3px rgba(134, 215, 62, 0.64);
+        box-shadow: 0 1px 6px 3px rgba( $over, .64 );
     }
     &:active {
         background-color: $over;
@@ -219,7 +219,7 @@ body {
     transition: 0.3s;
     cursor: pointer;
     &:hover {
-        box-shadow: 0 1px 6px 3px rgba(134, 215, 62, 0.64);
+        box-shadow: 0 1px 6px 3px rgba( $medium, .64 );
     }
     &:active {
         background-color: $medium;
@@ -258,7 +258,7 @@ body {
     transition: 0.3s;
     cursor: pointer;
     &:hover {
-        box-shadow: 0 1px 6px 3px rgba(134, 215, 62, 0.64);
+        box-shadow: 0 1px 6px 3px rgba( $heavy, .64 );
     }
     &:active {
         background-color: $heavy;
@@ -325,27 +325,27 @@ li {
 
 .txt-result-i:before {
     background: $ideal;
-    box-shadow: 2px 0 3px 0 rgba(133,215,63,0.29);
+    box-shadow: 2px 0 3px 0 rgba( $ideal, .29 );
 }
 
 .txt-result-l:before {
     background-color: $toolight;
-    box-shadow: 2px 0 3px 0 rgba(49,186,249,0.29);
+    box-shadow: 2px 0 3px 0 rgba( $toolight, .29 );
 }
 
 .txt-result-o:before {
     background-color: $over;
-    box-shadow: 2px 0 3px 0 rgba(255,152,45,0.29);
+    box-shadow: 2px 0 3px 0 rgba( $over, .29 );
 }
 
 .txt-result-m:before {
     background-color: $medium;
-    box-shadow: 2px 0 3px 0 rgba(255,108,2,0.29);
+    box-shadow: 2px 0 3px 0 rgba($medium, .29 );
 }
 
 .txt-result-h:before {
     background-color: $heavy;
-    box-shadow: 2px 0 3px 0 rgba(255,17,0,0.29);
+    box-shadow: 2px 0 3px 0 rgba( $heavy, .29 );
 }
 
 /*文字*/

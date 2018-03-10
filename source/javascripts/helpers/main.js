@@ -105,11 +105,11 @@ function showData() {
           break;
       }
     }
-    // console.log(str);
+    console.log(str);
+    var writeData = document.querySelector('.writeDataJS');
+    writeData.innerHTML = str;
   });
   // >>寫入網頁
-  var writeData = document.querySelector('.writeDataJS');
-  writeData.innerHTML = str;
 }
 
 
@@ -203,3 +203,7 @@ function resultBMI() {
 //   path.textContent = JSON.stringify(snapshot.val(), null, 3);
 //   // null,3是縮排設定
 // })
+
+$(document).ready(function () {
+  showData();
+});
