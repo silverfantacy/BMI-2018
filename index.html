@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>BMI 體重計算機</title>
+  <link rel="stylesheet" href="stylesheets\all.css">
+</head>
+
+<body>
+  <div class="wrapper container m-auto">
+    <header class="row d-flex justify-content-center align-items-center bg-secondary" style="height: 300px;">
+      <div class="col-2">
+        <img src="images/BMICLogo.png" alt="">
+      </div>
+      <div class="addData d-flex flex-column col-4">
+        <label for="height" class="h6 text-primary mb-0 font-weight-bold addData-style mb-1">身高 cm</label>
+        <input type="text" name="" id="height" placeholder="請輸入身高" required onkeyup="if(/\D/.test(this.value)){alert('請輸入數字');this.value='';}"
+          value="">
+        <label for="weight" class="h6 text-primary mb-0 font-weight-bold addData-style mb-1">體重 kg</label>
+        <input type="text" name="" id="weight" placeholder="請輸入體重" required onkeyup="if(/\D/.test(this.value)){alert('請輸入數字');this.value='';}"
+          value="">
+      </div>
+      <div class="col-2 d-flex flex-row justify-content-center align-items-center resultJs">
+        <p class="result rounded-circle bg-primary h4 text-center text-secondary font-weight-bold mb-0">看結果</p>
+
+      </div>
+      <p class="h3 result-text-js">
+        <span class="text-ideal result-text"></span>
+      </p>
+    </header>
+
+    <main class="row p-5" style="background-color: #f6f6f6;">
+      <h1 class="col-12 text-center h4">BMI 紀錄</h1>
+      <ul class="container pb-0 writeDataJS">
+        <!-- <li class="col-8 row bg-white mt-3 mx-auto align-items-stretch p-0">
+          <p class="txt-result txt-result-h mb-0">重度肥胖</p>
+          <p class="txt-bmi mb-0 font-weight-bold">20.90</p>
+          <p class="txt-kg mb-0 font-weight-bold">70kg</p>
+          <p class="txt-cm mb-0 font-weight-bold">180cm</p>
+          <p class="txt-date mb-0">06-19-2017</p>
+        </li>
+        <li class="col-8 row bg-white mt-3 mx-auto align-items-stretch p-0">
+          <p class="txt-result txt-result-i mb-0">理想</p>
+          <p class="txt-bmi mb-0 font-weight-bold">20.90</p>
+          <p class="txt-kg mb-0 font-weight-bold">70kg</p>
+          <p class="txt-cm mb-0 font-weight-bold">180cm</p>
+          <p class="txt-date mb-0">06-19-2017</p>
+        </li> -->
+      </ul>
+      <!-- <pre class="test"></pre> -->
+
+
+    </main>
+
+    <footer class="row bg-primary d-flex justify-content-center align-items-center p-4">
+      <img src="images/BMICLogo-b.png" alt="">
+    </footer>
+  </div>
+  <script src="https://www.gstatic.com/firebasejs/4.10.1/firebase.js"></script>
+  <script src="javascripts/vendor.js"></script>
+</body>
+
+</html>
