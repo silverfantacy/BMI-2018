@@ -105,7 +105,7 @@ function showData() {
           break;
       }
     }
-    console.log(str);
+    // console.log(str);
     var writeData = document.querySelector('.writeDataJS');
     writeData.innerHTML = str;
   });
