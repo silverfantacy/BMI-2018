@@ -6,7 +6,7 @@ body {
 }
 
 .wrapper {
-  min-width: 1024px;
+  max-width: 1024px;
 }
 
 
@@ -312,7 +312,10 @@ li {
 }
 
 .txt-result-i ,.txt-result-l ,.txt-result-o {
-    margin-right: 40px;
+    margin-right: 0px;
+    @include media-breakpoint-up(md) {
+        margin-right: 40px;
+    }
 }
 .txt-result:before {
     content: '';
@@ -354,8 +357,11 @@ li {
     display: inline-block;
     font-size: 0.75rem;
     font-weight: normal;
-    margin: 0 7px 0 30px;
+    margin: 0 7px 0 50px;
     line-height: 62px;
+    @include media-breakpoint-up(md) {
+        margin: 0 7px 0 30px;
+    }
 }
 
 .txt-kg {
