@@ -11,11 +11,11 @@
 
 <body>
   <div class="wrapper container m-auto">
-    <header class="row d-flex justify-content-center align-items-center bg-secondary" style="height: 300px;">
-      <div class="col-2">
+    <header class="row d-flex justify-content-center align-items-center bg-secondary py-5" style="">
+      <div class=" col-12 col-md-2 text-center ">
         <img src="images/BMICLogo.png" alt="">
       </div>
-      <div class="addData d-flex flex-column col-4">
+      <div class="addData d-flex flex-column col-12 col-md-4">
         <label for="height" class="h6 text-primary mb-0 font-weight-bold addData-style mb-1">身高 cm</label>
         <input type="text" name="" id="height" placeholder="請輸入身高" required onkeyup="if(/\D/.test(this.value)){alert('請輸入數字');this.value='';}"
           value="">
@@ -23,17 +23,17 @@
         <input type="text" name="" id="weight" placeholder="請輸入體重" required onkeyup="if(/\D/.test(this.value)){alert('請輸入數字');this.value='';}"
           value="">
       </div>
-      <div class="col-2 d-flex flex-row justify-content-center align-items-center resultJs">
+      <div class="col-12 col-md-2 d-flex flex-row justify-content-center align-items-center resultJs p-0">
         <p class="result rounded-circle bg-primary h4 text-center text-secondary font-weight-bold mb-0">看結果</p>
 
       </div>
-      <p class="h3 result-text-js">
-        <span class="text-ideal result-text"></span>
+      <p class="h3 result-text-js mt-3 mt-md-0">
+        <span class="text-ideal result-text position-static position-md-absolute"></span>
       </p>
     </header>
 
-    <main class="row p-5" style="background-color: #f6f6f6;">
-      <h1 class="col-12 text-center h4">BMI 紀錄</h1>
+    <main class="row p-1 p-md-5" style="background-color: #f6f6f6;">
+      <h1 class="col-12 text-center h4 p-5 p-md-0">BMI 紀錄</h1>
       <ul class="container pb-0 writeDataJS">
         <!-- <li class="col-8 row bg-white mt-3 mx-auto align-items-stretch p-0">
           <p class="txt-result txt-result-h mb-0">重度肥胖</p>

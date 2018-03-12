@@ -86,12 +86,12 @@ function showData() {
       // console.log(data[item]);
 
       // >>固定的程式碼
-      var fixedMod1 = '<li class="col-8 row bg-white mt-3 mx-auto align-items-stretch p-0">';
+      var fixedMod1 = '<li class="col-12 col-md-8 row bg-white mt-3 mx-auto justify-content-between align-items-stretch p-0">';
       var fixedMod2 = data[item].Color + '</p>' +
-        '<p class="txt-bmi mb-0 font-weight-bold">' + data[item].BMI + '</p>' +
-        '<p class="txt-kg mb-0 font-weight-bold">' + data[item].kg + '</p>' +
-        '<p class="txt-cm mb-0 font-weight-bold">' + data[item].cm + '</p>' +
-        '<p class="txt-date mb-0">' + data[item].time + '</p>' +
+        '<p class="txt-bmi mb-0 font-weight-bold mr-3 mr-md-0">' + data[item].BMI + '</p>' +
+        '<p class="txt-kg mb-0 font-weight-bold d-none d-md-block">' + data[item].kg + '</p>' +
+        '<p class="txt-cm mb-0 font-weight-bold d-none d-md-block">' + data[item].cm + '</p>' +
+        '<p class="txt-date mb-0 mr-3 d-none d-md-block">' + data[item].time + '</p>' +
         '</li>';
       // >>會改變的程式碼
       switch (data[item].Color) {
@@ -133,27 +133,27 @@ function changeBtn(color, calculate) {
   switch (color) {
     case '理想':
       strBMI = '<p class="result ideal rounded-circle h4 text-center font-weight-bold mb-0">' + calculate + fixedMod1;
-      strText = '<span class="text-ideal result-text">' + color + '</span>';
+      strText = '<span class="text-ideal result-text position-static position-md-absolute">' + color + '</span>';
       break;
     case '過輕':
       strBMI = '<p class="result toolight rounded-circle h4 text-center font-weight-bold mb-0">' + calculate + fixedMod1;
-      strText = '<span class="text-toolight result-text">' + color + '</span>';
+      strText = '<span class="text-toolight result-text position-static position-md-absolute">' + color + '</span>';
       break;
     case '過重':
       strBMI = '<p class="result over rounded-circle h4 text-center font-weight-bold mb-0">' + calculate + fixedMod1;
-      strText = '<span class="text-over result-text">' + color + '</span>';
+      strText = '<span class="text-over result-text position-static position-md-absolute">' + color + '</span>';
       break;
     case '輕度肥胖':
       strBMI = '<p class="result medium rounded-circle h4 text-center font-weight-bold mb-0">' + calculate + fixedMod1;
-      strText = '<span class="text-medium result-text">' + color + '</span>';
+      strText = '<span class="text-medium result-text position-static position-md-absolute">' + color + '</span>';
       break;
     case '中度肥胖':
       strBMI = '<p class="result medium rounded-circle h4 text-center font-weight-bold mb-0">' + calculate + fixedMod1;
-      strText = '<span class="text-medium result-text">' + color + '</span>';
+      strText = '<span class="text-medium result-text position-static position-md-absolute">' + color + '</span>';
       break;
     case '重度肥胖':
       strBMI = '<p class="result heavy rounded-circle h4 text-center font-weight-bold mb-0">' + calculate + fixedMod1;
-      strText = '<span class="text-heavy result-text">' + color + '</span>';
+      strText = '<span class="text-heavy result-text position-static position-md-absolute">' + color + '</span>';
       break;
     default :
       strBMI = '<p class="result rounded-circle bg-primary h4 text-center text-secondary font-weight-bold mb-0">看結果</p>';
